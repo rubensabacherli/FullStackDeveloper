@@ -1,10 +1,49 @@
 ﻿using Fundamentos.Common.Models;
 
-Pessoa pessoa1 = new Pessoa();
+List<string> listaString = new List<string>();
 
-pessoa1.Nome = "Rubens";
-pessoa1.Idade = 25;
-pessoa1.Apresentar();
+listaString.Add("São Paulo");
+listaString.Add("Rio de Janeiro");
+listaString.Add("Minas Gerais");
+
+
+for(int contador = 0; contador <listaString.Count; contador++){
+    Console.WriteLine($"Posição {contador} - {listaString[contador]}");
+}
+
+int contador = 0;
+foreach(string item in listaString){
+    Console.WriteLine($"Posição {contador} - {item}");
+    contador++;
+}
+// int[] arrayInteiros = new int[3]; // Limitado pelo tamanho ser definido
+
+// arrayInteiros[0] = 28;
+// arrayInteiros[1] = 32;
+// arrayInteiros[2] = 15;
+
+// Array.Resize(ref arrayInteiros, arrayInteiros.Length*2); //dobrando a capacidade do array com a classe Array
+
+// int[] arrayInteirosDobrado = new int[arrayInteiros.Length*2];
+// Array.Copy(arrayInteiros, arrayInteirosDobrado, arrayInteiros.Length)
+
+// //o array.resize faz uma cópia do array original, colocando os itens correspondentes que já existem.
+
+// for(int contador =0 ; contador < arrayInteiros.Length; contador++){
+//     Console.WriteLine($"Posição {contador} - {arrayInteiros[contador]}");
+// }
+
+// int contador = 0;
+// foreach(int valor in arrayInteiros){
+//     Console.WriteLine($"Posição {contador} - {valor}");
+//     contador++;
+// }
+
+// Pessoa pessoa1 = new Pessoa();
+
+// pessoa1.Nome = "Rubens";
+// pessoa1.Idade = 25;
+// pessoa1.Apresentar();
 
 
 // // casting -> o Null é valor zero
